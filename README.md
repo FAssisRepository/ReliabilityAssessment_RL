@@ -37,7 +37,7 @@ cd ReliabilityAssessment_RL
 .
 ├── main.py                       # Main execution script running the full training and evaluation pipeline
 ├── InputData/                    # Directory with system datasets, load curve, and central configuration file
-│   ├── 00_SIMULATION_SETTINGS.txt         # Central configuration file (System selection and NS-MCS, GNN, and training settings)
+│   ├── 00_SIMULATION_SETTINGS.set         # Central configuration file (System selection and NS-MCS, GNN, and training settings)
 │   ├── IEEERTS_LOAD.load                  # Full-year hourly load profile curve
 │   ├── SIST_6BUS_GLOBAL_AC.dat            # RBTS 6-bus system data
 │   ├── IEEERTS79_GLOBAL_AC.dat            # IEEE-RTS 24-bus system data
@@ -62,7 +62,7 @@ cd ReliabilityAssessment_RL
 
 Simulation and training parameters, including random seeds, are primarily defined in:
 ```
-InputData/00_SIMULATION_SETTINGS.txt
+InputData/00_SIMULATION_SETTINGS.set
 ```
 This file contains the main configuration parameters for:
 - Selection of the test system;
@@ -88,7 +88,7 @@ main.py
 ```
 The framework performs the corresponding training and reliability assessment procedures according to the settings specified in:
 ```
-InputData/00_SIMULATION_SETTINGS.txt
+InputData/00_SIMULATION_SETTINGS.set
 ```
 Trained model checkpoints are stored in:
 ```
@@ -110,7 +110,7 @@ To reproduce the experiments reported in the accompanying paper:
 - Use the generated output files in the ```OutputData/``` directory to check the results, including training dynamics, corrective performance metrics, and reliability indices.
 	
 The main output files associated with the results reported in the paper are described below:
-- **RL training dynamics**: Results for the per-constraint cost signals and Lagrange multipliers are available in files following the naming convention ```00_log_Lagrangian_Test_x.txt```, where ```x``` corresponds to the test number defined in ```InputData/00_SIMULATION_SETTINGS.txt```.
+- **RL training dynamics**: Results for the per-constraint cost signals and Lagrange multipliers are available in files following the naming convention ```00_log_Lagrangian_Test_x.txt```, where ```x``` corresponds to the test number defined in ```InputData/00_SIMULATION_SETTINGS.set```.
 - **Corrective performance metrics**: Optimality and feasibility results for the 1,000 unseen evaluation states are also available in files following the naming convention ```00_log_Lagrangian_Test_x.txt```.
 - **Corrective controls**: Corrective control actions for each evaluation state can be found in files following the naming conventions: 
 	- ```AC-OPF-OPF-y.txt``` - AC-OPF benchmark solution obtained using a conventional interior-point solver; 
@@ -132,7 +132,7 @@ Result-(2026, 9, 1, 15, 41, 39)/
 
 This directory contains the results of an execution of the proposed framework for the RBTS 6-bus system.
 
-The example provided in this repository corresponds to the training and reliability assessment settings specified in:```InputData/00_SIMULATION_SETTINGS.txt```
+The example provided in this repository corresponds to the training and reliability assessment settings specified in:```InputData/00_SIMULATION_SETTINGS.set```
 
 The files generated in this example directory illustrate the expected output structure and can be used to inspect the training dynamics, corrective performance, corrective control solutions, and reliability assessment results without requiring a new execution of the framework.
 
