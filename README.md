@@ -53,7 +53,7 @@ cd Proposed_Framework_RL_GNN
 	├── OPF_AC.py                     # AC Optimal Power Flow (AC-OPF) solver
 	└── reliab_assessment.py          # Primary reliability assessment engine, GNN training, and evaluation tests
 │
-├── testsystems_scenarios_description.pdf   # Detailed description of the test systems and scenario generation
+├── test_systems_scenarios_description.pdf   # Detailed description of the test systems and scenario generation
 ```
 
 ## Configuration
@@ -98,7 +98,7 @@ To reproduce the experiments reported in the accompanying paper:
 
 For a detailed description of the test systems and scenario-generation procedures, see:
 ```
-Description of the Test Systems and Scenarios.pdf
+test_systems_scenarios_description.pdf
 ```
 
 ## Citation
