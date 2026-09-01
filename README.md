@@ -59,7 +59,7 @@ cd ReliabilityAssessment_RL
 
 Simulation and training parameters are primarily defined in:
 ```
-Proposed_Framework_RL_GNN/InputData/00_SIMULATION_SETTINGS.txt
+InputData/00_SIMULATION_SETTINGS.txt
 ```
 This file contains the main configuration parameters for:
 - Selection of the test system;
