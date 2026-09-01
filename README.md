@@ -15,9 +15,16 @@ This repository provides the Python implementation of the framework proposed in 
 1. **Requirements:**
 
 Python 3.8+
+
 PyTorch & PyTorch Geometric
+
 Gymnasium
-PYPOWER / SciPy / NumPy
+
+PYPOWER
+
+SciPy
+
+NumPy
 
 2. **Quick Install:**
 
