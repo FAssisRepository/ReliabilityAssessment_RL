@@ -90,12 +90,16 @@ The framework performs the corresponding training and reliability assessment pro
 ```
 InputData/00_SIMULATION_SETTINGS.txt
 ```
-Simulation results, log files, and trained model checkpoints are stored in the corresponding output directories in:
+Trained model checkpoints are stored in:
+```
+GNNmodel/
+```
+Simulation results and log files are stored in the corresponding output directories in:
 ```
 OutputData/
 ```
 Each execution automatically generates a separate results directory following the naming convention:
-```Result-(year, month, day, hour, minute, second)```, where the values correspond to the date and time at which the execution was initiated.
+```OutputData/Result-(year, month, day, hour, minute, second)```, where the values correspond to the date and time at which the execution was initiated.
 
 ## Reproducibility
 To reproduce the experiments reported in the accompanying paper:
