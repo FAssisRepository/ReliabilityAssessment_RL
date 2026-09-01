@@ -7,7 +7,7 @@
 ---
 
 ## Overview
-This repository provides the Python implementation of the framework proposed in our paper, which accelerates power system reliability assessment by combining Non-Sequential Monte Carlo Simulation (NS-MCS) with a reinforcement learning-driven Graph Neural Network (RL-GNN) surrogate model to speed up AC-OPF evaluations. It is intended for reproducibility and extension by other researchers.
+This repository provides the Python implementation of the framework proposed in our paper, which accelerates power system reliability assessment by combining non-sequential Monte Carlo simulation (NS-MCS) with a reinforcement learning-driven graph neural network (RL-GNN) surrogate model to speed up AC-OPF evaluations. It is intended for reproducibility and extension by other researchers.
 
 
 ## Prerequisites & Installation
@@ -27,7 +27,7 @@ This repository provides the Python implementation of the framework proposed in 
 3. **Clone the repository**
 Clone the repository:
 ```bash
-git clone https://github.com/FAssisRepository/ReliabilityAssessment_RL/Proposed_Framework_RL_GNN
+git clone https://github.com/FAssisRepository/ReliabilityAssessment_RL/Proposed_Framework_RL_GNN.git
 cd Proposed_Framework_RL_GNN
 ```
 
