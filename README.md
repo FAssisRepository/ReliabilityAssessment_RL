@@ -27,31 +27,30 @@ This repository provides the Python implementation of the framework proposed in 
 3. **Clone the repository**
 Clone the repository:
 ```bash
-git clone https://github.com/FAssisRepository/ReliabilityAssessment_RL/Proposed_Framework_RL_GNN.git
-cd Proposed_Framework_RL_GNN
+git clone https://github.com/FAssisRepository/ReliabilityAssessment_RL.git
+cd ReliabilityAssessment_RL
 ```
 
 ## Repository structure
 
 ```bash
 .
-├── Proposed_Framework_RL_GNN/        # Main code directory
-	├── main.py                       # Main execution script running the full training and evaluation pipeline
-	├── InputData/                    # Directory with system datasets, load curve, and central configuration file
+├── main.py                       # Main execution script running the full training and evaluation pipeline
+├── InputData/                    # Directory with system datasets, load curve, and central configuration file
 		├── 00_SIMULATION_SETTINGS.txt    # Central configuration file (System selection and NS-MCS, GNN, and training settings)
 		├── IEEERTS_LOAD.load             # Full-year hourly load profile curve
 		├── SIST_6BUS_GLOBAL_AC.dat       # RBTS 6-bus system data
 		├── IEEERTS79_GLOBAL_AC.dat       # IEEE-RTS 24-bus system data
 		├── SIST_200B_GLOBAL_AC.dat       # Illinois 200-bus (ACTIVSg200) system data
-	├── GNNmodel/                     # Directory for saving trained GNN model checkpoints
-	├── OutputData/                   # Directory for storing simulation results and log files
-    ├── input_data_class.py           # Data parser loading system topologies, network parameters, and settings
-	├── auxiliar_classes.py           # Helper utilities and data structures for simulation logging and tracking
-	├── DRL_reliab_env_1episode.py    # Single-episode RL environment handling graph states, actions, rewards, and constraints
-	├── element_classes.py            # Object models for power system elements (buses, generators, circuits, loads)
-	├── flow_AC.py                    # AC Power Flow (AC-PF) solver (without optimization)
-	├── OPF_AC.py                     # AC Optimal Power Flow (AC-OPF) solver
-	└── reliab_assessment.py          # Primary reliability assessment engine, GNN training, and evaluation tests
+├── GNNmodel/                     # Directory for saving trained GNN model checkpoints
+├── OutputData/                   # Directory for storing simulation results and log files
+├── input_data_class.py           # Data parser loading system topologies, network parameters, and settings
+├── auxiliar_classes.py           # Helper utilities and data structures for simulation logging and tracking
+├── DRL_reliab_env_1episode.py    # Single-episode RL environment handling graph states, actions, rewards, and constraints
+├── element_classes.py            # Object models for power system elements (buses, generators, circuits, loads)
+├── flow_AC.py                    # AC Power Flow (AC-PF) solver (without optimization)
+├── OPF_AC.py                     # AC Optimal Power Flow (AC-OPF) solver
+└── reliab_assessment.py          # Primary reliability assessment engine, GNN training, and evaluation tests
 │
 ├── test_systems_scenarios_description.pdf   # Detailed description of the test systems and scenario generation
 ```
@@ -82,21 +81,21 @@ test_systems_scenarios_description.pdf
 
 The main execution script is:
 ```
-Proposed_Framework_RL_GNN/main.py
+main.py
 ```
 The framework performs the corresponding training and reliability assessment procedures according to the settings specified in:
 ```
-Proposed_Framework_RL_GNN/InputData/00_SIMULATION_SETTINGS.txt
+InputData/00_SIMULATION_SETTINGS.txt
 ```
-Simulation results, log files, and trained model checkpoints are stored in the corresponding output directories.
+Simulation results, log files, and trained model checkpoints are stored in the corresponding output directories in:
 ```
-Proposed_Framework_RL_GNN/OutputData/
+OutputData/
 ```
 
 ## Reproducibility
 To reproduce the experiments reported in the accompanying paper:
 - Install the required Python dependencies.
-- Clone the repository ```Proposed_Framework_RL_GNN/```.
+- Clone the repository directory.
 - Select the desired test system and simulation parameters in ```InputData/00_SIMULATION_SETTINGS.txt```.
 - Run ```main.py```.
 - Use the generated output files in the ```OutputData/``` directory to check the results, including training dynamics, corrective performance metrics, and reliability indices.
