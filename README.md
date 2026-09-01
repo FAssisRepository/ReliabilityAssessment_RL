@@ -73,6 +73,11 @@ This file contains the main configuration parameters for:
 
 Before running an experiment, review this file and adjust the parameters according to the desired test case.
 
+For a detailed description of the test systems and scenario-generation procedures, see:
+```
+test_systems_scenarios_description.pdf
+```
+
 ## Running the Framework
 
 The main execution script is:
@@ -95,11 +100,6 @@ To reproduce the experiments reported in the accompanying paper:
 - Select the desired test system and simulation parameters in ```InputData/00_SIMULATION_SETTINGS.txt```.
 - Run ```main.py```.
 - Use the generated output files in the ```OutputData/``` directory to check the results, including training dynamics, corrective performance metrics, and reliability indices.
-
-For a detailed description of the test systems and scenario-generation procedures, see:
-```
-test_systems_scenarios_description.pdf
-```
 
 ## Citation
 If you use this code, dataset, or the proposed methodology in academic research, please cite the accompanying paper:
