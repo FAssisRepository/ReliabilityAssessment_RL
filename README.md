@@ -60,7 +60,7 @@ cd ReliabilityAssessment_RL
 
 ## Configuration
 
-Simulation and training parameters are primarily defined in:
+Simulation and training parameters, including random seeds, are primarily defined in:
 ```
 InputData/00_SIMULATION_SETTINGS.txt
 ```
