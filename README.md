@@ -13,29 +13,43 @@ This repository provides the Python implementation of the framework proposed in 
 ## Prerequisites & Installation
 
 1. **Requirements:**
-
-Python 3.8+
-
-PyTorch & PyTorch Geometric
-
-Gymnasium
-
-PYPOWER
-
-SciPy
-
-NumPy
+- Python 3.8+
+- PyTorch
+- PyTorch Geometric
+- Gymnasium
+- PYPOWER
+- NumPy
+- SciPy
 
 2. **Quick Install:**
-
 ```pip install torch torch-geometric numpy scipy pypower gymnasium```
+
+3. **Clone the repository**
+Clone the repository:
+```bash
+git clone https://github.com/FAssisRepository/ReliabilityAssessment_RL/Proposed_Framework_RL_GNN
+cd Proposed_Framework_RL_GNN
+```
+
+After installing the dependencies, the main program can be executed from the repository's main code directory:
+```
+python main.py
+```
 
 ## Repository structure
 
 ```bash
 .
-├── 00_SIMULATION_SETTINGS    # Central configuration file (System selection and NS-MCS, GNN, and training settings)
-├── main.py                   # Main execution script running the full training and evaluation pipeline
+├── Proposed_Framework_RL_GNN/        # Main code directory
+	├── main.py                       # Main execution script running the full training and evaluation pipeline
+	├── InputData/                    # Directory with systems datasets, load curve, and central configuration file
+		├── 00_SIMULATION_SETTINGS.txt    # Central configuration file (System selection and NS-MCS, GNN, and training settings)
+		├── IEEERTS_LOAD.load             # Full-year hourly load profile curve
+		├── SIST_6BUS_GLOBAL_AC.dat       # RTBS 6-bus system data
+		├── IEEERTS79_GLOBAL_AC.dat       # IEEE-RTS 24-bus system data
+		├── SIST_200B_GLOBAL_AC.dat       # Illinois 200-bus (ACTIVSg200) system data
+	├── GNNmodel/                     # Directory for saving trained GNN model checkpoints
+	├── OutputData/                   # Directory for storing simulation results and log files
     ├── input_data_class.py           # Data parser loading system topologies, network parameters, and settings
 	├── auxiliar_classes.py           # Helper utilities and data structures for simulation logging and tracking
 	├── DRL_reliab_env_1episode.py    # Single-episode RL environment handling graph states, actions, rewards, and constraints
@@ -43,4 +57,6 @@ NumPy
 	├── flow_AC.py                    # AC Power Flow (AC-PF) solver (without optimization)
 	├── OPF_AC.py                     # AC Optimal Power Flow (AC-OPF) solver
 	└── reliab_assessment.py          # Primary reliability assessment engine, GNN training, and evaluation tests
+│
+├── Description of the Test Systems and Scenarios.pdf      # Detailed description of the test systems and scenarios generation
 ```
