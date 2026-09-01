@@ -91,10 +91,10 @@ Proposed_Framework_RL_GNN/OutputData/
 ## Reproducibility
 To reproduce the experiments reported in the accompanying paper:
 - Install the required Python dependencies.
-- Clone the repository Proposed_Framework_RL_GNN/.
-- Select the desired test system and simulation parameters in InputData/00_SIMULATION_SETTINGS.txt.
+- Clone the repository ```Proposed_Framework_RL_GNN/```.
+- Select the desired test system and simulation parameters in ```InputData/00_SIMULATION_SETTINGS.txt```.
 - Run main.py.
-- Use the generated output files in OutputData/ directory to check the results (training dynamics, corrective performance metrics, and reliability indices).
+- Use the generated output files in the ```OutputData/``` directory to check the results, including training dynamics, corrective performance metrics, and reliability indices.
 
 For a detailed description of the test systems and scenario-generation procedures, see:
 ```
