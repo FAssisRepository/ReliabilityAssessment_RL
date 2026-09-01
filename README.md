@@ -29,3 +29,18 @@ NumPy
 2. **Quick Install:**
 
 ```pip install torch torch-geometric numpy scipy pypower gymnasium```
+
+## Repository structure
+
+```bash
+.
+├── 00_SIMULATION_SETTINGS    # Central configuration file (System selection and NS-MCS, GNN, and training settings)
+├── main.py                   # Main execution script running the full training and evaluation pipeline
+    ├── input_data_class.py           # Data parser loading system topologies, network parameters, and settings
+	├── auxiliar_classes.py           # Helper utilities and data structures for simulation logging and tracking
+	├── DRL_reliab_env_1episode.py    # Single-episode RL environment handling graph states, actions, rewards, and constraints
+	├── element_classes.py            # Object models for power system elements (buses, generators, circuits, loads)
+	├── flow_AC.py                    # AC Power Flow (AC-PF) solver (without optimization)
+	├── OPF_AC.py                     # AC Optimal Power Flow (AC-OPF) solver
+	└── reliab_assessment.py          # Primary reliability assessment engine, GNN training, and evaluation tests
+```
