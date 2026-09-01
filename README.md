@@ -37,13 +37,15 @@ cd ReliabilityAssessment_RL
 .
 ├── main.py                       # Main execution script running the full training and evaluation pipeline
 ├── InputData/                    # Directory with system datasets, load curve, and central configuration file
-		├── 00_SIMULATION_SETTINGS.txt    # Central configuration file (System selection and NS-MCS, GNN, and training settings)
-		├── IEEERTS_LOAD.load             # Full-year hourly load profile curve
-		├── SIST_6BUS_GLOBAL_AC.dat       # RBTS 6-bus system data
-		├── IEEERTS79_GLOBAL_AC.dat       # IEEE-RTS 24-bus system data
-		├── SIST_200B_GLOBAL_AC.dat       # Illinois 200-bus (ACTIVSg200) system data
+│   ├── 00_SIMULATION_SETTINGS.txt    # Central configuration file (System selection and NS-MCS, GNN, and training settings)
+│   ├── IEEERTS_LOAD.load             # Full-year hourly load profile curve
+│   ├── SIST_6BUS_GLOBAL_AC.dat       # RBTS 6-bus system data
+│   ├── IEEERTS79_GLOBAL_AC.dat       # IEEE-RTS 24-bus system data
+│   └── SIST_200B_GLOBAL_AC.dat       # Illinois 200-bus (ACTIVSg200) system data
 ├── GNNmodel/                     # Directory for saving trained GNN model checkpoints
+│   └── .gitkeep
 ├── OutputData/                   # Directory for storing simulation results and log files
+│   └── .gitkeep
 ├── input_data_class.py           # Data parser loading system topologies, network parameters, and settings
 ├── auxiliar_classes.py           # Helper utilities and data structures for simulation logging and tracking
 ├── DRL_reliab_env_1episode.py    # Single-episode RL environment handling graph states, actions, rewards, and constraints
@@ -52,7 +54,7 @@ cd ReliabilityAssessment_RL
 ├── OPF_AC.py                     # AC Optimal Power Flow (AC-OPF) solver
 └── reliab_assessment.py          # Primary reliability assessment engine, GNN training, and evaluation tests
 │
-├── test_systems_scenarios_description.pdf   # Detailed description of the test systems and scenario generation
+└── test_systems_scenarios_description.pdf   # Detailed description of the test systems and scenario generation
 ```
 
 ## Configuration
