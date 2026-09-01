@@ -11,6 +11,7 @@ This repository provides the Python implementation of the framework proposed in 
 
 
 ## Prerequisites & Installation
+
 1. **Requirements:**
 - Python 3.8+
 - PyTorch
@@ -31,6 +32,7 @@ cd ReliabilityAssessment_RL
 ```
 
 ## Repository structure
+
 ```bash
 .
 ├── main.py                       # Main execution script running the full training and evaluation pipeline
@@ -56,6 +58,7 @@ cd ReliabilityAssessment_RL
 ```
 
 ## Configuration
+
 Simulation and training parameters are primarily defined in:
 ```
 InputData/00_SIMULATION_SETTINGS.txt
@@ -77,6 +80,7 @@ test_systems_scenarios_description.pdf
 ```
 
 ## Running the Framework
+
 The main execution script is:
 ```
 main.py
@@ -97,6 +101,20 @@ To reproduce the experiments reported in the accompanying paper:
 - Select the desired test system and simulation parameters in ```InputData/00_SIMULATION_SETTINGS.txt```.
 - Run ```main.py```.
 - Use the generated output files in the ```OutputData/``` directory to check the results, including training dynamics, corrective performance metrics, and reliability indices.
+	
+The main output files associated with the results reported in the paper are described below:
+	- **RL training dynamics**: Results for the per-constraint cost signals and Lagrange multipliers are available in files following the naming convention ```00_log_Lagrangian_Test_x.txt```, where ```x``` corresponds to the test number defined in ```InputData/00_SIMULATION_SETTINGS.txt```.
+	- **Corrective performance metrics**: Optimality and feasibility results for the 1000 unseen evaluation states are also available in files following the naming convention ```00_log_Lagrangian_Test_x.txt```.
+	- **Corrective controls**: Corrective control actions for each evaluation state can be found in files following these naming conventions: 
+		- ```AC-OPF-OPF-y.txt``` - AC-OPF-NS-MCS benchmark; 
+		- ```AC-PF-GNN-PT-y``` - SL-GNN policy; 
+		- ```AC-PF-GNN-RL-y``` RL-GNN policy.
+	Here, ```y``` corresponds to the evaluation-state number.
+	- **Reliability assessment results**: The results corresponding to Table VI in the paper are available in files following these naming conventions: 
+		- ```x_z_OPF_NS_MCS.txt``` - AC-OPF-NS-MCS benchmark;
+		- ```x_z_RL_GNN_NS_MCS.txt``` - RL-GNN-NS-MCS;
+		- ```x_z_PT_GNN_NS_MCS.txt``` - SL-GNN-NS-MCS.
+	Here, ```z``` corresponds to the system under evaluation.
 
 ## Citation
 If you use this code, dataset, or the proposed methodology in academic research, please cite the accompanying paper:
