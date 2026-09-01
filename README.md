@@ -11,7 +11,6 @@ This repository provides the Python implementation of the framework proposed in 
 
 
 ## Prerequisites & Installation
-
 1. **Requirements:**
 - Python 3.8+
 - PyTorch
@@ -32,7 +31,6 @@ cd ReliabilityAssessment_RL
 ```
 
 ## Repository structure
-
 ```bash
 .
 ├── main.py                       # Main execution script running the full training and evaluation pipeline
@@ -58,7 +56,6 @@ cd ReliabilityAssessment_RL
 ```
 
 ## Configuration
-
 Simulation and training parameters are primarily defined in:
 ```
 InputData/00_SIMULATION_SETTINGS.txt
@@ -80,7 +77,6 @@ test_systems_scenarios_description.pdf
 ```
 
 ## Running the Framework
-
 The main execution script is:
 ```
 main.py
