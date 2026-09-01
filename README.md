@@ -58,5 +58,21 @@ python main.py
 	├── OPF_AC.py                     # AC Optimal Power Flow (AC-OPF) solver
 	└── reliab_assessment.py          # Primary reliability assessment engine, GNN training, and evaluation tests
 │
-├── Description of the Test Systems and Scenarios.pdf      # Detailed description of the test systems and scenarios generation
+├── testsystems_scenarios_description.pdf   # Detailed description of the test systems and scenario generation
 ```
+
+4. **Configuration**
+Simulation and training parameters are primarily defined in:
+```
+Proposed_Framework_RL_GNN/InputData/00_SIMULATION_SETTINGS.txt
+```
+This file contains the main configuration parameters for:
+- Selection of the test system;
+- NS-MCS settings;
+- Load profile and simulation settings;
+- GNN configuration;
+- Supervised learning parameters;
+- Reinforcement learning parameters;
+- Training and evaluation settings.
+
+Before running an experiment, review this file and adjust the parameters according to the desired test case.
