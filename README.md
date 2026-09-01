@@ -141,3 +141,7 @@ If you use this code, dataset, or the proposed methodology in academic research,
   year    = {2026}
 }
 ```
+
+## License
+This work is licensed under the MIT License.  
+See the [LICENSE](LICENSE) file for more details.
