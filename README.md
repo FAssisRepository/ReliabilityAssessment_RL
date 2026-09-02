@@ -209,7 +209,7 @@ To reproduce Table VI:
 Here, `x` corresponds to the test number and `z` corresponds to the system under evaluation. 
 
 ## Citation
-If you use this code, dataset, or the proposed methodology in academic research, please cite the accompanying paper:
+If you use this code, dataset, or the proposed methodology in academic research, please cite the accompanying manuscript:
 ```bibtex
 @article{Assis2026,
   author  = {Fernando A. Assis and Marcos Netto and Arnob Ghosh},
