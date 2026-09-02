@@ -219,6 +219,12 @@ If you use this code, dataset, or the proposed methodology in academic research,
 }
 ```
 
+## Software DOI
+
+The v1.0.0 release of this software is archived on Zenodo:
+
+[https://https://doi.org/10.5281/zenodo.22258859](https://doi.org/10.5281/zenodo.22258859)
+
 ## License
 This work is licensed under the MIT License.  
 See the [LICENSE](LICENSE) file for more details.
