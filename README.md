@@ -151,6 +151,8 @@ Before executing the script, copy the corresponding output files into the ```gra
 
 Here, ```x``` corresponds to the test number, while ```y``` corresponds to the evaluation-state number.
 
+The output files obtained from the example results for the RBTS 6-bus system, together with the corresponding figures, are also available in the repository. These files allow the figures to be inspected without requiring a new execution of the framework.
+
 ## Citation
 If you use this code, dataset, or the proposed methodology in academic research, please cite the accompanying paper:
 ```
