@@ -206,14 +206,13 @@ Here, `x` corresponds to the test number and `z` corresponds to the system under
 
 ## Citation
 If you use this code, dataset, or the proposed methodology in academic research, please cite the accompanying paper:
-`
+```bash
 @article{Assis2026,
   author  = {Fernando A. Assis and Marcos Netto and Arnob Ghosh},
   title   = {Accelerated Composite Reliability Assessment Using a Reinforcement Learning-Driven Graph Neural Network Surrogate},
   journal = {IEEE Transactions on Power Systems},
   year    = {2026}
-}
-`
+```
 
 ## License
 This work is licensed under the MIT License.  
