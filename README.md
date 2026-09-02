@@ -216,7 +216,7 @@ If you use this code, dataset, or the proposed methodology in academic research,
   title   = {Accelerated Composite Reliability Assessment Using a Reinforcement Learning-Driven Graph Neural Network Surrogate},
   journal = {IEEE Transactions on Power Systems},
   year    = {2026}
-}
+}```
 
 ## License
 This work is licensed under the MIT License.  
