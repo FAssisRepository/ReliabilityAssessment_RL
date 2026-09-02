@@ -14,15 +14,16 @@ This repository provides the Python implementation of the framework proposed in 
 
 1. **Requirements:**
 - Python 3.8+
+- NumPy
+- SciPy
+- Pandas
 - PyTorch
 - PyTorch Geometric
 - Gymnasium
 - PYPOWER
-- NumPy
-- SciPy
 
 2. **Quick Install:**
-```pip install torch torch-geometric numpy scipy pypower gymnasium```
+```python -m pip install -r requirements.txt```
 
 3. **Clone the repository**
 Clone the repository:
@@ -56,6 +57,8 @@ cd ReliabilityAssessment_RL
 └── reliab_assessment.py          # Primary reliability assessment engine, GNN training, and evaluation tests
 │
 ├── test_systems_scenarios_description.pdf # Detailed description of the test systems and scenario generation
+│
+├── requirements.txt              # Python package dependencies and tested versions
 │
 └── graph_plot/                   # Directory containing the plotting script
 	└── plot_results.py                    # Script for plotting training dynamics and performance results
@@ -123,6 +126,21 @@ The main output files associated with the results reported in the paper are desc
 	- ```x_z_RL_GNN_NS_MCS.txt``` - RL-GNN-NS-MCS;
 	- ```x_z_PT_GNN_NS_MCS.txt``` - SL-GNN-NS-MCS.
 	Here, ```z``` corresponds to the system under evaluation.
+
+### Tested Environment
+
+The framework was developed and tested using:
+
+- Python 3.11.9
+- NumPy 1.26.4
+- SciPy 1.17.1
+- pandas 3.0.2
+- PyTorch 2.5.1+cu121
+- PyTorch Geometric 2.7.0
+- Gymnasium 1.2.3
+- PYPOWER 5.1.19
+
+The AC-OPF evaluations use the `runopf()` function provided by PYPOWER. The default PYPOWER configuration uses `OPF_ALG=0` (automatic algorithm selection).
 
 ### Example Results
 
