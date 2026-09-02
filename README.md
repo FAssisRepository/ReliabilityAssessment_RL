@@ -69,8 +69,10 @@ InputData/00_SIMULATION_SETTINGS.set
 ```
 This file contains the main configuration parameters for:
 - system selection;
-- NS-MCS, GNN, and training settings;
-- Load profile and simulation settings.
+- NS-MCS settings;
+- GNN configuration;
+- training settings;
+- simulation settings.
 
 Before running an experiment, review this file and adjust the parameters according to the desired test case.
 
