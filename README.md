@@ -23,7 +23,7 @@ This repository provides the Python implementation of the framework proposed in 
 - PYPOWER
 
 2. **Quick Install:**
-```python -m pip install -r requirements.txt```
+`python -m pip install -r requirements.txt`
 
 3. **Clone the repository**
 Clone the repository:
@@ -69,9 +69,9 @@ cd ReliabilityAssessment_RL
 ## Configuration
 
 Simulation and training parameters, including random seeds, are primarily defined in:
-```
+`
 InputData/00_SIMULATION_SETTINGS.set
-```
+`
 This file contains the main configuration parameters for:
 - system selection;
 - NS-MCS settings;
@@ -82,52 +82,52 @@ This file contains the main configuration parameters for:
 Before running an experiment, review this file and adjust the parameters according to the desired test case.
 
 For a detailed description of the test systems and scenario-generation procedures, see:
-```
+`
 test_systems_scenarios_description.pdf
-```
+`
 
 ## Running the Framework
 
 The main execution script is:
-```
+`
 main.py
-```
+`
 The framework performs the corresponding training and reliability assessment procedures according to the settings specified in:
-```
+`
 InputData/00_SIMULATION_SETTINGS.set
-```
+`
 Trained model checkpoints are stored in:
-```
+`
 GNNmodel/
-```
+`
 Simulation results and log files are stored in the corresponding output directories in:
-```
+`
 OutputData/
-```
+`
 Each execution automatically generates a separate results directory following the naming convention:
-```OutputData/Result-(year, month, day, hour, minute, second)```, where the values correspond to the date and time at which the execution was initiated.
+`OutputData/Result-(year, month, day, hour, minute, second)`, where the values correspond to the date and time at which the execution was initiated.
 
 ## Reproducibility
 To reproduce the experiments reported in the accompanying paper:
 - Install the required Python dependencies.
 - Clone the repository.
-- Select the desired test system and simulation parameters in ```InputData/00_SIMULATION_SETTINGS.set```.
-- Run ```main.py```.
-- Use the generated output files in the ```OutputData/``` directory to check the results, including training dynamics, corrective performance metrics, and reliability indices.
+- Select the desired test system and simulation parameters in `InputData/00_SIMULATION_SETTINGS.set`.
+- Run `main.py`.
+- Use the generated output files in the `OutputData/` directory to check the results, including training dynamics, corrective performance metrics, and reliability indices.
 	
 The main output files associated with the results reported in the paper are described below:
-- **RL training dynamics**: Results for the per-constraint cost signals and Lagrange multipliers are available in files following the naming convention ```training_dynamics_performance_x.txt```, where ```x``` corresponds to the test number defined in ```InputData/00_SIMULATION_SETTINGS.set```.
-- **Corrective performance metrics**: Optimality and feasibility results for the 1,000 unseen evaluation states are also available in files following the naming convention ```training_dynamics_performance_x.txt```.
+- **RL training dynamics**: Results for the per-constraint cost signals and Lagrange multipliers are available in files following the naming convention `training_dynamics_performance_x.txt`, where `x` corresponds to the test number defined in `InputData/00_SIMULATION_SETTINGS.set`.
+- **Corrective performance metrics**: Optimality and feasibility results for the 1,000 unseen evaluation states are also available in files following the naming convention `training_dynamics_performance_x.txt`.
 - **Corrective controls**: Corrective control actions for each evaluation state can be found in files following the naming conventions: 
-	- ```AC-OPF-y.txt``` - AC-OPF benchmark solution obtained using a conventional interior-point solver; 
-	- ```AC-PF-GNN-PT-y.txt``` - the corrective control and complete power flow solution obtained using the SL-GNN policy; 
-	- ```AC-PF-GNN-RL-y.txt``` - the corrective control and complete power flow solution obtained using the RL-GNN policy.
-	Here, ```y``` corresponds to the evaluation-state number.
+	- `AC-OPF-y.txt` - AC-OPF benchmark solution obtained using a conventional interior-point solver; 
+	- `AC-PF-GNN-PT-y.txt` - the corrective control and complete power flow solution obtained using the SL-GNN policy; 
+	- `AC-PF-GNN-RL-y.txt` - the corrective control and complete power flow solution obtained using the RL-GNN policy.
+	Here, `y` corresponds to the evaluation-state number.
 - **Reliability assessment results**: The results corresponding to Table VI in the paper are available in files following the naming conventions: 
-	- ```x_z_AC_OPF_NS_MCS.txt``` - AC-OPF-NS-MCS benchmark;
-	- ```x_z_RL_GNN_NS_MCS.txt``` - RL-GNN-NS-MCS;
-	- ```x_z_PT_GNN_NS_MCS.txt``` - SL-GNN-NS-MCS.
-	Here, ```z``` corresponds to the system under evaluation.
+	- `x_z_AC_OPF_NS_MCS.txt` - AC-OPF-NS-MCS benchmark;
+	- `x_z_RL_GNN_NS_MCS.txt` - RL-GNN-NS-MCS;
+	- `x_z_PT_GNN_NS_MCS.txt` - SL-GNN-NS-MCS.
+	Here, `z` corresponds to the system under evaluation.
 
 ### Tested Environment
 
@@ -150,7 +150,7 @@ PYPOWER is an open-source software package. Its license and attribution requirem
 
 ### Random Seeds
 
-The framework uses separate random seeds for the non-sequential Monte Carlo simulation (NS-MCS) and reinforcement learning (RL) procedures. The seeds used in the experiments are defined in ```InputData/00_SIMULATION_SETTINGS.set```:
+The framework uses separate random seeds for the non-sequential Monte Carlo simulation (NS-MCS) and reinforcement learning (RL) procedures. The seeds used in the experiments are defined in `InputData/00_SIMULATION_SETTINGS.set`:
 
 - **NS-MCS seed:** `1234`
 - **RL seed:** `42`
@@ -159,61 +159,61 @@ The NS-MCS seed controls the generation of pseudorandom samples used for reliabi
 
 ### Input Data Checksums
 
-SHA-256 checksums for the test-system input files are provided in ```checksums.txt```. These checksums can be used to verify the integrity and exact version of the input data used in the reported experiments.
+SHA-256 checksums for the test-system input files are provided in `checksums.txt`. These checksums can be used to verify the integrity and exact version of the input data used in the reported experiments.
 
 ### Example Results
 
 An example of the output generated by the proposed framework is provided in the directory:
-```
+`
 OutputData/Result-(2026, 6, 27, 20, 24, 27)/
-```
+`
 
 This directory contains the results of an execution of the proposed framework for the RBTS 6-bus system.
 
-The example provided in this repository corresponds to the training and reliability assessment settings specified in: ```InputData/00_SIMULATION_SETTINGS.set```
+The example provided in this repository corresponds to the training and reliability assessment settings specified in: `InputData/00_SIMULATION_SETTINGS.set`
 
 The files generated in this example directory illustrate the expected output structure and can be used to inspect the training dynamics, corrective performance, corrective control solutions, and reliability assessment results without requiring a new execution of the framework.
 
 ### Reproducing Figures
 
-To reproduce the figures presented in the paper, use the plotting script ```plot_results.py``` located in the ```graph_plot/``` directory. 
+To reproduce the figures presented in the paper, use the plotting script `plot_results.py` located in the `graph_plot/` directory. 
 
-Before executing the script, copy the corresponding output files into the ```graph_plot/``` directory:
-- ```training_dynamics_performance_x.txt```;
-- ```AC-OPF-y.txt```; 
-- ```AC-PF-GNN-PT-y.txt```; 
-- ```AC-PF-GNN-RL-y.txt```.
+Before executing the script, copy the corresponding output files into the `graph_plot/` directory:
+- `training_dynamics_performance_x.txt`;
+- `AC-OPF-y.txt`; 
+- `AC-PF-GNN-PT-y.txt`; 
+- `AC-PF-GNN-RL-y.txt`.
 
-Here, ```x``` corresponds to the test number, while ```y``` corresponds to the evaluation-state number.
+Here, `x` corresponds to the test number, while `y` corresponds to the evaluation-state number.
 
 The output files obtained from the example results for the RBTS 6-bus system, together with the corresponding figures, are also available in the repository. These files allow the figures to be inspected without requiring a new execution of the framework.
 
 ### Reproducing Table VI
 
-Table VI in the paper is obtained directly from the reliability assessment results generated by ```main.py```.
+Table VI in the paper is obtained directly from the reliability assessment results generated by `main.py`.
 
 To reproduce Table VI:
 
 1. Select the corresponding test system and simulation settings in `InputData/00_SIMULATION_SETTINGS.set`.
 2. Run `main.py`.
 3. Use the generated reliability assessment files in the corresponding `OutputData/Result-.../` directory:
-   - ```training_dynamics_performance_x.txt``` - training times;
+   - `training_dynamics_performance_x.txt` - training times;
    - `x_z_AC_OPF_NS_MCS.txt` - AC-OPF-NS-MCS reliability assessment results;
    - `x_z_RL_GNN_NS_MCS.txt` - RL-GNN-NS-MCS reliability assessment results;
    - `x_z_PT_GNN_NS_MCS.txt` - SL-GNN-NS-MCS reliability assessment results.
 
-Here, ```x``` corresponds to the test number and `z` corresponds to the system under evaluation. 
+Here, `x` corresponds to the test number and `z` corresponds to the system under evaluation. 
 
 ## Citation
 If you use this code, dataset, or the proposed methodology in academic research, please cite the accompanying paper:
-```
+`
 @article{Assis2026,
   author  = {Fernando A. Assis and Marcos Netto and Arnob Ghosh},
   title   = {Accelerated Composite Reliability Assessment Using a Reinforcement Learning-Driven Graph Neural Network Surrogate},
   journal = {IEEE Transactions on Power Systems},
   year    = {2026}
 }
-```
+`
 
 ## License
 This work is licensed under the MIT License.  
