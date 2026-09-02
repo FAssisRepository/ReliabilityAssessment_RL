@@ -143,7 +143,7 @@ The files generated in this example directory illustrate the expected output str
 
 To reproduce the figures presented in the paper, use the plotting script ```plot_results.py``` located in the ```graph_plot/``` directory. 
 
-Before executing the script, copy the corresponding output files into the ```graph_plot/``` directory::
+Before executing the script, copy the corresponding output files into the ```graph_plot/``` directory:
 - ```training_dynamics_performance_x.txt```;
 - ```AC-OPF-y.txt```; 
 - ```AC-PF-GNN-PT-y.txt```; 
