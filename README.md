@@ -54,11 +54,13 @@ cd ReliabilityAssessment_RL
 ├── element_classes.py            # Object models for power system elements (buses, generators, circuits, loads)
 ├── flow_AC.py                    # AC Power Flow (AC-PF) solver (without optimization)
 ├── OPF_AC.py                     # AC Optimal Power Flow (AC-OPF) solver
-└── reliab_assessment.py          # Primary reliability assessment engine, GNN training, and evaluation tests
+├── reliab_assessment.py          # Primary reliability assessment engine, GNN training, and evaluation tests
 │
 ├── test_systems_scenarios_description.pdf # Detailed description of the test systems and scenario generation
 │
 ├── requirements.txt              # Python package dependencies and tested versions
+│
+├── checksums.txt                 # SHA-256 checksums for the test-system input data
 │
 └── graph_plot/                   # Directory containing the plotting script
 	└── plot_results.py                    # Script for plotting training dynamics and performance results
@@ -140,7 +142,24 @@ The framework was developed and tested using:
 - Gymnasium 1.2.3
 - PYPOWER 5.1.19
 
-The AC-OPF evaluations use the `runopf()` function provided by PYPOWER. The default PYPOWER configuration uses `OPF_ALG=0` (automatic algorithm selection).
+### AC-OPF Solver
+
+AC-OPF evaluations are performed using the `runopf()` function provided by PYPOWER. The OPF configuration uses `OPF_ALG=0` (automatic algorithm selection), with `VERBOSE=0` and `OUT_ALL=0`.
+
+PYPOWER is an open-source software package. Its license and attribution requirements are provided with the PYPOWER distribution.
+
+### Random Seeds
+
+The framework uses separate random seeds for the non-sequential Monte Carlo simulation (NS-MCS) and reinforcement learning (RL) procedures. The seeds used in the experiments are defined in ```InputData/00_SIMULATION_SETTINGS.set```:
+
+- **NS-MCS seed:** `1234`
+- **RL seed:** `42`
+
+The NS-MCS seed controls the generation of pseudorandom samples used for reliability assessment, while the RL seed controls the stochastic processes associated with RL training.
+
+### Input Data Checksums
+
+SHA-256 checksums for the test-system input files are provided in ```checksums.txt```. These checksums can be used to verify the integrity and exact version of the input data used in the reported experiments.
 
 ### Example Results
 
