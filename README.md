@@ -13,7 +13,7 @@ This repository provides the Python implementation of the framework proposed in 
 ## Prerequisites & Installation
 
 1. **Requirements:**
-- Python 3.8+
+- Python 3.11+
 - NumPy
 - SciPy
 - Pandas
@@ -188,9 +188,9 @@ To reproduce these tables:
 1. Select the corresponding test system and simulation settings in `InputData/00_SIMULATION_SETTINGS.set`.
 2. Run `main.py`.
 3. Use the generated output file in the corresponding `OutputData/Result-.../` directory:
-   - `training_dynamics_performance_x.txt` - locate the section "CURRENT GNN TEST - 1000 STATE EVALUATIONS - PERFORMANCE METRICS:" for the corresponding policy.
+   - `training_dynamics_performance_x.txt` - locate the section `CURRENT GNN TEST - 1000 STATE EVALUATIONS - PERFORMANCE METRICS:` for the corresponding policy.
    
-Here, x corresponds to the test number defined in `InputData/00_SIMULATION_SETTINGS.set`.
+Here, `x` corresponds to the test number defined in `InputData/00_SIMULATION_SETTINGS.set`.
 
 ### Reproducing Table VI
 
