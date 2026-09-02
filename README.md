@@ -116,12 +116,12 @@ The main output files associated with the results reported in the paper are desc
 	- ```AC-OPF-y.txt``` - AC-OPF benchmark solution obtained using a conventional interior-point solver; 
 	- ```AC-PF-GNN-PT-y.txt``` - the corrective control and complete power flow solution obtained using the SL-GNN policy; 
 	- ```AC-PF-GNN-RL-y.txt``` - the corrective control and complete power flow solution obtained using the RL-GNN policy.
-Here, ```y``` corresponds to the evaluation-state number.
+\\Here, ```y``` corresponds to the evaluation-state number.
 - **Reliability assessment results**: The results corresponding to Table VI in the paper are available in files following the naming conventions: 
 	- ```x_z_AC_OPF_NS_MCS.txt``` - AC-OPF-NS-MCS benchmark;
 	- ```x_z_RL_GNN_NS_MCS.txt``` - RL-GNN-NS-MCS;
 	- ```x_z_PT_GNN_NS_MCS.txt``` - SL-GNN-NS-MCS.
-Here, ```z``` corresponds to the system under evaluation.
+\\Here, ```z``` corresponds to the system under evaluation.
 
 **Example Results**
 
