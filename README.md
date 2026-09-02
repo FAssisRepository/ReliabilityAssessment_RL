@@ -57,7 +57,7 @@ cd ReliabilityAssessment_RL
 │
 └── test_systems_scenarios_description.pdf # Detailed description of the test systems and scenario generation
 │
-└── graph_plot/                   # Directory containing plotting scripts
+└── graph_plot/                   # Directory containing the plotting script
 	└── plot_results.py                    # Script for plotting training dynamics and performance result
 ```
 
