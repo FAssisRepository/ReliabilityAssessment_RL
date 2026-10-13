@@ -1,8 +1,8 @@
-# Accelerated composite reliability assessment using a reinforcement learning-driven graph neural network surrogate
+# Accelerated Composite Reliability Assessment Using Shielded Reinforcement Learning
 
 **Repository accompanying:**
 
-"Accelerated composite reliability assessment using a reinforcement learning-driven graph neural network surrogate" by Fernando A. Assis, Marcos Netto, and Arnob Ghosh
+"Accelerated Composite Reliability Assessment Using Shielded Reinforcement Learning" by Fernando A. Assis, Marcos Netto, and Arnob Ghosh
 
 ---
 
@@ -213,7 +213,7 @@ If you use this code, dataset, or the proposed methodology in academic research,
 ```bibtex
 @article{Assis2026,
   author  = {Fernando A. Assis and Marcos Netto and Arnob Ghosh},
-  title   = {Accelerated Composite Reliability Assessment Using a Reinforcement Learning-Driven Graph Neural Network Surrogate},
+  title   = {Accelerated Composite Reliability Assessment Using Shielded Reinforcement Learning},
   journal = {IEEE Transactions on Power Systems},
   year    = {2026}
 }
