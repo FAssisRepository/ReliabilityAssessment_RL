@@ -1,0 +1,288 @@
+[Lagrangian] Pretraining GNN with SL (OPF targets)...
+[Pretrain] NS    133 | Samples for training:    20
+[Pretrain] NS    313 | Samples for training:    40
+[Pretrain] NS    490 | Samples for training:    60
+[Pretrain] NS    646 | Samples for training:    80
+[Pretrain] NS    813 | Samples for training:   100
+[Pretrain] NS    955 | Samples for training:   120
+[Pretrain] NS   1139 | Samples for training:   140
+[Pretrain] NS   1309 | Samples for training:   160
+[Pretrain] NS   1472 | Samples for training:   180
+[Pretrain] NS   1613 | Samples for training:   200
+[Pretrain] NS   1757 | Samples for training:   220
+[Pretrain] NS   1912 | Samples for training:   240
+[Pretrain] NS   2003 | Samples for training:   260
+[Pretrain] NS   2154 | Samples for training:   280
+[Pretrain] NS   2281 | Samples for training:   300
+[Pretrain] NS   2494 | Samples for training:   320
+[Pretrain] NS   2629 | Samples for training:   340
+[Pretrain] NS   2868 | Samples for training:   360
+[Pretrain] NS   3086 | Samples for training:   380
+[Pretrain] NS   3232 | Samples for training:   400
+[Pretrain] NS   3395 | Samples for training:   420
+[Pretrain] NS   3545 | Samples for training:   440
+[Pretrain] NS   3686 | Samples for training:   460
+[Pretrain] NS   3815 | Samples for training:   480
+[Pretrain] NS   3986 | Samples for training:   500
+[Pretrain] NS   4193 | Samples for training:   520
+[Pretrain] NS   4328 | Samples for training:   540
+[Pretrain] NS   4501 | Samples for training:   560
+[Pretrain] NS   4662 | Samples for training:   580
+[Pretrain] NS   4836 | Samples for training:   600
+[Pretrain] NS   4953 | Samples for training:   620
+[Pretrain] NS   5126 | Samples for training:   640
+[Pretrain] NS   5257 | Samples for training:   660
+[Pretrain] NS   5460 | Samples for training:   680
+[Pretrain] NS   5618 | Samples for training:   700
+[Pretrain] NS   5771 | Samples for training:   720
+[Pretrain] NS   5902 | Samples for training:   740
+[Pretrain] NS   6081 | Samples for training:   760
+[Pretrain] NS   6253 | Samples for training:   780
+[Pretrain] NS   6399 | Samples for training:   800
+[Pretrain] NS   6567 | Samples for training:   820
+[Pretrain] NS   6684 | Samples for training:   840
+[Pretrain] NS   6840 | Samples for training:   860
+[Pretrain] NS   6959 | Samples for training:   880
+[Pretrain] NS   7166 | Samples for training:   900
+[Pretrain] NS   7316 | Samples for training:   920
+[Pretrain] NS   7533 | Samples for training:   940
+[Pretrain] NS   7715 | Samples for training:   960
+[Pretrain] NS   7877 | Samples for training:   980
+[Pretrain] NS   8021 | Samples for training:  1000
+[Pretrain] NS   8222 | Samples for training:  1020
+[Pretrain] NS   8442 | Samples for training:  1040
+[Pretrain] NS   8693 | Samples for training:  1060
+[Pretrain] NS   8858 | Samples for training:  1080
+[Pretrain] NS   9050 | Samples for training:  1100
+[Pretrain] NS   9207 | Samples for training:  1120
+[Pretrain] NS   9337 | Samples for training:  1140
+[Pretrain] NS   9485 | Samples for training:  1160
+[Pretrain] NS   9643 | Samples for training:  1180
+[Pretrain] NS   9827 | Samples for training:  1200
+[Pretrain] NS   9986 | Samples for training:  1220
+[Pretrain] NS  10146 | Samples for training:  1240
+[Pretrain] NS  10272 | Samples for training:  1260
+[Pretrain] NS  10501 | Samples for training:  1280
+[Pretrain] NS  10680 | Samples for training:  1300
+[Pretrain] NS  10832 | Samples for training:  1320
+[Pretrain] NS  10963 | Samples for training:  1340
+[Pretrain] NS  11112 | Samples for training:  1360
+[Pretrain] NS  11300 | Samples for training:  1380
+[Pretrain] NS  11544 | Samples for training:  1400
+[Pretrain] NS  11698 | Samples for training:  1420
+[Pretrain] NS  11896 | Samples for training:  1440
+[Pretrain] NS  12048 | Samples for training:  1460
+[Pretrain] NS  12200 | Samples for training:  1480
+[Pretrain] NS  12343 | Samples for training:  1500
+[Pretrain] NS  12632 | Samples for training:  1520
+[Pretrain] NS  12761 | Samples for training:  1540
+[Pretrain] NS  12846 | Samples for training:  1560
+[Pretrain] NS  12994 | Samples for training:  1580
+[Pretrain] NS  13198 | Samples for training:  1600
+[Pretrain] NS  13352 | Samples for training:  1620
+[Pretrain] NS  13515 | Samples for training:  1640
+[Pretrain] NS  13709 | Samples for training:  1660
+[Pretrain] NS  13894 | Samples for training:  1680
+[Pretrain] NS  14059 | Samples for training:  1700
+[Pretrain] NS  14219 | Samples for training:  1720
+[Pretrain] NS  14374 | Samples for training:  1740
+[Pretrain] NS  14541 | Samples for training:  1760
+[Pretrain] NS  14666 | Samples for training:  1780
+[Pretrain] NS  14854 | Samples for training:  1800
+[Pretrain] NS  15028 | Samples for training:  1820
+[Pretrain] NS  15244 | Samples for training:  1840
+[Pretrain] NS  15343 | Samples for training:  1860
+[Pretrain] NS  15574 | Samples for training:  1880
+[Pretrain] NS  15710 | Samples for training:  1900
+[Pretrain] NS  15875 | Samples for training:  1920
+[Pretrain] NS  16057 | Samples for training:  1940
+[Pretrain] NS  16189 | Samples for training:  1960
+[Pretrain] NS  16335 | Samples for training:  1980
+[Pretrain] NS  16565 | Samples for training:  2000
+[Pretrain] NS  16740 | Samples for training:  2020
+[Pretrain] NS  16924 | Samples for training:  2040
+[Pretrain] NS  17046 | Samples for training:  2060
+[Pretrain] NS  17206 | Samples for training:  2080
+[Pretrain] NS  17329 | Samples for training:  2100
+[Pretrain] NS  17509 | Samples for training:  2120
+[Pretrain] NS  17685 | Samples for training:  2140
+[Pretrain] NS  17899 | Samples for training:  2160
+[Pretrain] NS  18092 | Samples for training:  2180
+[Pretrain] NS  18238 | Samples for training:  2200
+[Pretrain] NS  18446 | Samples for training:  2220
+[Pretrain] NS  18595 | Samples for training:  2240
+[Pretrain] NS  18767 | Samples for training:  2260
+[Pretrain] NS  18894 | Samples for training:  2280
+[Pretrain] NS  19066 | Samples for training:  2300
+[Pretrain] NS  19198 | Samples for training:  2320
+[Pretrain] NS  19354 | Samples for training:  2340
+[Pretrain] NS  19513 | Samples for training:  2360
+[Pretrain] NS  19657 | Samples for training:  2380
+[Pretrain] NS  19847 | Samples for training:  2400
+[Pretrain] NS  19968 | Samples for training:  2420
+[Pretrain] NS  20091 | Samples for training:  2440
+[Pretrain] NS  20207 | Samples for training:  2460
+[Pretrain] NS  20345 | Samples for training:  2480
+[Pretrain] NS  20550 | Samples for training:  2500
+[Pretrain] NS  20692 | Samples for training:  2520
+[Pretrain] NS  20841 | Samples for training:  2540
+[Pretrain] NS  21044 | Samples for training:  2560
+[Pretrain] NS  21191 | Samples for training:  2580
+[Pretrain] NS  21292 | Samples for training:  2600
+[Pretrain] NS  21464 | Samples for training:  2620
+[Pretrain] NS  21610 | Samples for training:  2640
+[Pretrain] NS  21782 | Samples for training:  2660
+[Pretrain] NS  21940 | Samples for training:  2680
+[Pretrain] NS  22094 | Samples for training:  2700
+[Pretrain] NS  22275 | Samples for training:  2720
+[Pretrain] NS  22466 | Samples for training:  2740
+[Pretrain] NS  22653 | Samples for training:  2760
+[Pretrain] NS  22806 | Samples for training:  2780
+[Pretrain] NS  22926 | Samples for training:  2800
+[Pretrain] NS  23022 | Samples for training:  2820
+[Pretrain] NS  23131 | Samples for training:  2840
+[Pretrain] NS  23214 | Samples for training:  2860
+[Pretrain] NS  23291 | Samples for training:  2880
+[Pretrain] NS  23461 | Samples for training:  2900
+[Pretrain] NS  23628 | Samples for training:  2920
+[Pretrain] NS  23740 | Samples for training:  2940
+[Pretrain] NS  23961 | Samples for training:  2960
+[Pretrain] NS  24086 | Samples for training:  2980
+[Pretrain] NS  24256 | Samples for training:  3000
+[Pretrain] NS  24256 | Samples for training:  3000
+[Pretrain] Violation type distribution: {'circuit_only': 2673, 'voltage_only': 3, 'reactive_only': 60, 'activeSW_only': 0, 'mixed': 264, 'n_unavailableG': 440, 'n_unavailableC': 31}
+[Pretrain] Epoch    1/1000 | Actor loss:     0.026548 | Baseline loss:     0.429385
+[Pretrain] Epoch   21/1000 | Actor loss:     0.000909 | Baseline loss:     0.001652
+[Pretrain] Epoch   41/1000 | Actor loss:     0.000931 | Baseline loss:     0.038629
+[Pretrain] Epoch   61/1000 | Actor loss:     0.000770 | Baseline loss:     0.000137
+[Pretrain] Epoch   81/1000 | Actor loss:     0.000781 | Baseline loss:     0.000561
+[Pretrain] Epoch  101/1000 | Actor loss:     0.000767 | Baseline loss:     0.000012
+[Pretrain] Epoch  121/1000 | Actor loss:     0.000725 | Baseline loss:     0.000039
+[Pretrain] Epoch  141/1000 | Actor loss:     0.000725 | Baseline loss:     0.000003
+[Pretrain] Epoch  161/1000 | Actor loss:     0.000711 | Baseline loss:     0.000002
+[Pretrain] Epoch  181/1000 | Actor loss:     0.000713 | Baseline loss:     0.000001
+[Pretrain] Epoch  201/1000 | Actor loss:     0.000701 | Baseline loss:     0.000001
+[Pretrain] Epoch  221/1000 | Actor loss:     0.000698 | Baseline loss:     0.000001
+[Pretrain] Epoch  241/1000 | Actor loss:     0.000714 | Baseline loss:     0.000000
+[Pretrain] Epoch  261/1000 | Actor loss:     0.000704 | Baseline loss:     0.000000
+[Pretrain] Epoch  281/1000 | Actor loss:     0.000682 | Baseline loss:     0.000001
+[Pretrain] Epoch  301/1000 | Actor loss:     0.000682 | Baseline loss:     0.000000
+[Pretrain] Epoch  321/1000 | Actor loss:     0.000677 | Baseline loss:     0.000000
+[Pretrain] Epoch  341/1000 | Actor loss:     0.000665 | Baseline loss:     0.000000
+[Pretrain] Epoch  361/1000 | Actor loss:     0.000659 | Baseline loss:     0.000000
+[Pretrain] Epoch  381/1000 | Actor loss:     0.000686 | Baseline loss:     0.000000
+[Pretrain] Epoch  401/1000 | Actor loss:     0.000672 | Baseline loss:     0.000000
+[Pretrain] Epoch  421/1000 | Actor loss:     0.000702 | Baseline loss:     0.000000
+[Pretrain] Epoch  441/1000 | Actor loss:     0.000663 | Baseline loss:     0.000000
+[Pretrain] Epoch  461/1000 | Actor loss:     0.000661 | Baseline loss:     0.000000
+[Pretrain] Epoch  481/1000 | Actor loss:     0.000661 | Baseline loss:     0.000000
+[Pretrain] Epoch  501/1000 | Actor loss:     0.000660 | Baseline loss:     0.000000
+[Pretrain] Epoch  521/1000 | Actor loss:     0.000660 | Baseline loss:     0.000000
+[Pretrain] Epoch  541/1000 | Actor loss:     0.000665 | Baseline loss:     0.000000
+[Pretrain] Epoch  561/1000 | Actor loss:     0.000749 | Baseline loss:     0.000000
+[Pretrain] Epoch  581/1000 | Actor loss:     0.000661 | Baseline loss:     0.000000
+[Pretrain] Epoch  601/1000 | Actor loss:     0.000661 | Baseline loss:     0.000000
+[Pretrain] Epoch  621/1000 | Actor loss:     0.000657 | Baseline loss:     0.000000
+[Pretrain] Epoch  641/1000 | Actor loss:     0.000661 | Baseline loss:     0.000000
+[Pretrain] Epoch  661/1000 | Actor loss:     0.000664 | Baseline loss:     0.000000
+[Pretrain] Epoch  681/1000 | Actor loss:     0.000663 | Baseline loss:     0.000000
+[Pretrain] Epoch  701/1000 | Actor loss:     0.000662 | Baseline loss:     0.000000
+[Pretrain] Epoch  721/1000 | Actor loss:     0.000661 | Baseline loss:     0.000000
+[Pretrain] Epoch  741/1000 | Actor loss:     0.000659 | Baseline loss:     0.000000
+[Pretrain] Epoch  761/1000 | Actor loss:     0.000660 | Baseline loss:     0.000000
+[Pretrain] Epoch  781/1000 | Actor loss:     0.000690 | Baseline loss:     0.000000
+[Pretrain] Epoch  801/1000 | Actor loss:     0.000663 | Baseline loss:     0.000000
+[Pretrain] Epoch  821/1000 | Actor loss:     0.000659 | Baseline loss:     0.000000
+[Pretrain] Epoch  841/1000 | Actor loss:     0.000660 | Baseline loss:     0.000000
+[Pretrain] Epoch  861/1000 | Actor loss:     0.000659 | Baseline loss:     0.000000
+[Pretrain] Epoch  881/1000 | Actor loss:     0.000663 | Baseline loss:     0.000000
+[Pretrain] Epoch  901/1000 | Actor loss:     0.000660 | Baseline loss:     0.000002
+[Pretrain] Epoch  921/1000 | Actor loss:     0.000658 | Baseline loss:     0.000000
+[Pretrain] Epoch  941/1000 | Actor loss:     0.000660 | Baseline loss:     0.000000
+[Pretrain] Epoch  961/1000 | Actor loss:     0.000662 | Baseline loss:     0.000000
+[Pretrain] Epoch  981/1000 | Actor loss:     0.000657 | Baseline loss:     0.000000
+[Pretrain] Epoch 1000/1000 | Actor loss:     0.000659 | Baseline loss:     0.000000
+[Pretrain] Finished!
+[Pretrain] Spent time 4576.71 [s]
+==================================
+CURRENT GNN TEST - 10 STATE EVALUATIONS:
+ 1 - Reward GNN:   0.999998  |  Reward OPF:   1.000000
+ 2 - Reward GNN:   0.999996  |  Reward OPF:   1.000000
+ 3 - Reward GNN:   1.000000  |  Reward OPF:   1.000000
+ 4 - Reward GNN:   0.999999  |  Reward OPF:   1.000000
+ 5 - Reward GNN:   0.999999  |  Reward OPF:   1.000000
+ 6 - Reward GNN:   0.999996  |  Reward OPF:   1.000000
+ 7 - Reward GNN:   1.000000  |  Reward OPF:   1.000000
+ 8 - Reward GNN:   0.999998  |  Reward OPF:   1.000000
+ 9 - Reward GNN:   0.913253  |  Reward OPF:   0.913196
+10 - Reward GNN:   0.999999  |  Reward OPF:   1.000000
+==================================
+MEAN TIMES FOR 10 STATE EVALUATIONS:
+AC-OPF: 2.0174e-01
+GNN:    1.0326e-02
+----------------------------------
+AC-PF:  4.6746e-03 - NS samples: 82
+==================================
+==================================
+CURRENT GNN TEST - 1000 STATE EVALUATIONS - PERFORMANCE METRICS:
+LOAD SHEDDING (OPTIMALITY): 
+  Absolute deviation =     0.0727 [MW]  |  Number of samples where the GNN and AC-OPF solutions differ by more than 0.01 MW =   119
+FEASIBILITY: 
+   Mean V error per sample (load buses) =     0.0000 [pu]    |  Mean number of buses with violations per sample:            0.00 (0.00%)  |  Number of samples with V violation:       0
+   Mean QG error per sample (PV and SW) =     0.0013 [MVAr]  |  Mean number of buses with violations per sample:            0.02 (0.01%)  |  Number of samples with QG violation:     24
+   Mean Sij error per sample            =     0.0142 [MVA]   |  Mean number of circuits with violations per sample:         0.01 (0.00%)  |  Number of samples with Sij violation:     8
+   PG error per sample - (SW bus)       =     0.0000 [MW]                                                                                 |  Number of samples with PG violation:      0
+   Sampes with at least one issue  =    182
+Number of solutions where the GNN outperforms the AC-OPF solver:   0
+Number of samples with load shedding: 170
+==================================
+MEAN TIMES FOR 1000 STATE EVALUATIONS:
+AC-OPF: 2.0875e-01
+GNN:    4.9596e-03
+----------------------------------
+AC-PF:  4.4009e-03 - NS samples: 8147
+ ---------------------------------
+Total eval time:  2.5534e+02
+==================================
+[Lagrangian] Training finished after 10 episodes.
+[Lagrangian] Spent time 0.45 [s]
+==================================
+CURRENT GNN TEST - 10 STATE EVALUATIONS:
+ 1 - Reward GNN:   0.999998  |  Reward OPF:   1.000000
+ 2 - Reward GNN:   0.999996  |  Reward OPF:   1.000000
+ 3 - Reward GNN:   1.000000  |  Reward OPF:   1.000000
+ 4 - Reward GNN:   0.999999  |  Reward OPF:   1.000000
+ 5 - Reward GNN:   0.999999  |  Reward OPF:   1.000000
+ 6 - Reward GNN:   0.999996  |  Reward OPF:   1.000000
+ 7 - Reward GNN:   1.000000  |  Reward OPF:   1.000000
+ 8 - Reward GNN:   0.999998  |  Reward OPF:   1.000000
+ 9 - Reward GNN:   0.913253  |  Reward OPF:   0.913196
+10 - Reward GNN:   0.999999  |  Reward OPF:   1.000000
+==================================
+MEAN TIMES FOR 10 STATE EVALUATIONS:
+AC-OPF: 2.0782e-01
+GNN:    1.0441e-02
+----------------------------------
+AC-PF:  4.8444e-03 - NS samples: 82
+==================================
+==================================
+CURRENT GNN TEST - 1000 STATE EVALUATIONS - PERFORMANCE METRICS:
+LOAD SHEDDING (OPTIMALITY): 
+  Absolute deviation =     0.0727 [MW]  |  Number of samples where the GNN and AC-OPF solutions differ by more than 0.01 MW =   119
+FEASIBILITY: 
+   Mean V error per sample (load buses) =     0.0000 [pu]    |  Mean number of buses with violations per sample:            0.00 (0.00%)  |  Number of samples with V violation:       0
+   Mean QG error per sample (PV and SW) =     0.0013 [MVAr]  |  Mean number of buses with violations per sample:            0.02 (0.01%)  |  Number of samples with QG violation:     24
+   Mean Sij error per sample            =     0.0142 [MVA]   |  Mean number of circuits with violations per sample:         0.01 (0.00%)  |  Number of samples with Sij violation:     8
+   PG error per sample - (SW bus)       =     0.0000 [MW]                                                                                 |  Number of samples with PG violation:      0
+   Sampes with at least one issue  =    182
+Number of solutions where the GNN outperforms the AC-OPF solver:   0
+Number of samples with load shedding: 170
+==================================
+MEAN TIMES FOR 1000 STATE EVALUATIONS:
+AC-OPF: 2.0925e-01
+GNN:    4.9830e-03
+----------------------------------
+AC-PF:  4.4275e-03 - NS samples: 8147
+ ---------------------------------
+Total eval time:  2.5615e+02
+==================================
